@@ -3,6 +3,7 @@ var expect = require("chai").expect;
 var reverse = require("../app/reverse");
 var parentheses = require("../app/parentheses");
 var sumThreeFive = require("../app/sumThreeFive");
+var reduce = require("../app/reduce");
 
 describe("Solves Code Problems", function() {
 
@@ -35,6 +36,21 @@ describe("Solves Code Problems", function() {
     it("Adds up Numbers Divisible by 3 or 5", function() {
     	var ten = sumThreeFive.sumThreeFive(10);
     	expect(ten).to.equal(23);
+    });
+  });
+
+  describe("It Reduces Double Characters", function() {
+    it("Removes all double characters until they're gone", function() {
+      var one = reduce.reduce("aaabccddd");
+      var two = reduce.reduce("baab");
+      var three = reduce.reduce("aa");
+      var four = reduce.reduce("abcdefghij")
+
+      expect(one).to.equal("abd");
+      expect(two).to.equal("Empty String");
+      expect(three).to.equal("Empty String");
+      expect(four).to.equal('abcdefghij');
+
     });
   });
   

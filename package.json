@@ -18,5 +18,13 @@
   "dependencies": {
     "express": "^4.14.0",
     "request": "^2.73.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiffanyposs/mochaQuickStart.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tiffanyposs/mochaQuickStart/issues"
+  },
+  "homepage": "https://github.com/tiffanyposs/mochaQuickStart#readme"
 }
